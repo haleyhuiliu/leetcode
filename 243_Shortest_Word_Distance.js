@@ -22,7 +22,7 @@ var shortestDistance = function(words, word1, word2) {
         }
     }
     
-    while(step < words.length - 1) {
+    while(step < words.length) {
         for (let i = 0; i < pos.length; i++) {
             if (words[pos[i] + step] === word2 || words[pos[i] - step] === word2) {
                 return step;
