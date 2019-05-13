@@ -27,3 +27,7 @@ Word Ladder
 Binary Tree Upside Down
 
 Number of Islands
+
+Lowest Common Ancestor of a Binary Search Tree
+
+Lowest Common Ancestor of a Binary Tree
