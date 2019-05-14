@@ -1,6 +1,6 @@
-LinkedIn
+### LinkedIn
 
-###### Array and Strings
+##### Array and Strings
 
 https://github.com/haleyhuiliu/leetcode/blob/master/0001_Two_Sum.js
 
@@ -20,7 +20,7 @@ Can Place Flowers
 
 Isomorphic Strings
 
-###### Trees and Graphs
+##### Trees and Graphs
 
 Binary Tree Level Order Traversal
 
