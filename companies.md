@@ -1,5 +1,7 @@
 LinkedIn
 
+######Array and Strings
+
 https://github.com/haleyhuiliu/leetcode/blob/master/0001_Two_Sum.js
 
 Valid Number
@@ -17,6 +19,8 @@ https://github.com/haleyhuiliu/leetcode/blob/master/0277_Find_The_Celebrity.js
 Can Place Flowers
 
 Isomorphic Strings
+
+######Trees and Graphs
 
 Binary Tree Level Order Traversal
 
