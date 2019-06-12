@@ -21,7 +21,6 @@ var threeSum = function(nums) {
     const arr = nums.sort((a, b) => a - b);
     const result = [];
     
-    // find a
     for (let i = 0; i < arr.length; i++) {
         let a = arr[i];
         let b = null;
@@ -35,11 +34,7 @@ var threeSum = function(nums) {
             break;
         }
         
-        
-        let j = -1; 
-        let k = -1;
-        
-        for (j = i + 1, k = arr.length - 1; j < k; ) {
+        for (let j = i + 1, k = arr.length - 1; j < k; ) {
             b = arr[j];
             c = arr[k];
             
