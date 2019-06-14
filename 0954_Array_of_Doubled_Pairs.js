@@ -24,8 +24,6 @@
 // A.length is even
 // -100000 <= A[i] <= 100000
 
-
-
 /**
  * @param {number[]} A
  * @return {boolean}
@@ -41,8 +39,6 @@ var canReorderDoubled = function(A) {
     }, {});
     
     let ns = Object.keys(counts);
-    
-    
     
     while(1) {
         let flag = false;
