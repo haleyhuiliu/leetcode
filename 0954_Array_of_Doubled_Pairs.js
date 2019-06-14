@@ -38,10 +38,13 @@ var canReorderDoubled = function(A) {
         return acc;
     }, {});
     
-    let ns = Object.keys(counts);
-    
     while(1) {
         let flag = false;
+        let ns = Object.keys(counts);
+        
+        if (ns.length === 0) {
+            return true;
+        }
         
         if (ns.length === 1 && ns[0] === '0') {
             return true;
@@ -61,39 +64,17 @@ var canReorderDoubled = function(A) {
                 return false;
             } else if (counts[n1] === undefined) {
                 flag = true;
-                
-                if (counts[n] === 1) {
-                    delete counts[n];
-                } else {
-                    counts[n] = counts[n] - 1;
-                }
-
-                if (counts[n2] === 1) {
-                    delete counts[n2];
-                } else {
-                    counts[n2] = counts[n2] - 1;
-                }
+                counts[n] = counts[n] - 1;
+                counts[n2] = counts[n2] - 1;
             } else if (counts[n2] === undefined) {
                 flag = true;
-                
-                if (counts[n] === 1) {
-                    delete counts[n];
-                } else {
-                    counts[n] = counts[n] - 1;
-                }
-
-                if (counts[n1] === 1) {
-                    delete counts[n1];
-                } else {
-                    counts[n1] = counts[n1] - 1;
-                }
+                counts[n] = counts[n] - 1;
+                counts[n1] = counts[n1] - 1;
             }
-        }
-        
-        ns = Object.keys(counts);
-        
-        if (ns.length === 0) {
-            return true;
+            
+            if (counts[n] === 0) delete counts[n];
+            if (counts[n1] === 0) delete counts[n1];
+            if (counts[n2] === 0) delete counts[n2];
         }
         
         if (!flag) {
